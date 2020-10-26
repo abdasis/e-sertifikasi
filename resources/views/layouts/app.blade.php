@@ -22,7 +22,7 @@
 
         <!-- Custom  sCss -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
-
+        <meta name="turbolinks-visit-control" content="reload">
         @livewireStyles
 
         <!-- Scripts -->
@@ -49,7 +49,6 @@
         <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
         <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
         <script src="{{ asset('js/scrollspy.min.js') }}"></script>
-
         <!-- custom js -->
         @livewireScripts
         <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false"></script>
