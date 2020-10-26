@@ -44,14 +44,14 @@
         <a href="#" class="back-to-top" id="back-to-top"> <i class="mdi mdi-chevron-up"> </i> </a>
 
         <!-- javascript -->
+        <script src="{{ mix('js/app.js') }}"></script>
         <script src="{{ asset('js/jquery.min.js') }}"></script>
         <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
         <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
         <script src="{{ asset('js/scrollspy.min.js') }}"></script>
 
         <!-- custom js -->
-        <script src="{{ asset('js/app.js') }}"></script>
-        <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false"></script>
         @livewireScripts
+        <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false"></script>
     </body>
 </html>
