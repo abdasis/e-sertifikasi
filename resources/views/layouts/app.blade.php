@@ -72,8 +72,6 @@
             <!-- ============================================================== -->
             <!-- End Page content -->
             <!-- ============================================================== -->
-
-
         </div>
         <!-- END wrapper -->
 
@@ -472,14 +470,11 @@
             </div> <!-- end slimscroll-menu-->
         </div>
         <!-- /Right-bar -->
-
         <!-- Right bar overlay-->
         <div class="rightbar-overlay"></div>
-
         @livewireScripts
         <!-- Vendor js -->
         <script src="{{ asset('backend/js/vendor.min.js') }}"></script>
-
         <!-- Plugins js -->
         <script src="{{ asset('backend/libs/morris.js06/morris.min.js') }}"></script>
         <script src="{{ asset('backend/libs/raphael/raphael.min.js') }}"></script>

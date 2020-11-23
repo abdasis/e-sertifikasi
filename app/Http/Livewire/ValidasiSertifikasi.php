@@ -8,6 +8,6 @@ class ValidasiSertifikasi extends Component
 {
     public function render()
     {
-        return view('livewire.validasi-sertifikasi')->extends('layouts.guest');
+        return view('livewire.validasi-sertifikasi')->layout('layouts.guest');
     }
 }

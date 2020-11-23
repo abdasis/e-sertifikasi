@@ -8,6 +8,6 @@ class Training extends Component
 {
     public function render()
     {
-        return view('livewire.training')->extends('layouts.guest');
+        return view('livewire.training')->layout('layouts.guest');
     }
 }

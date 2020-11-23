@@ -8,6 +8,6 @@ class Beranda extends Component
 {
     public function render()
     {
-        return view('livewire.beranda')->extends('layouts.guest');
+        return view('livewire.beranda')->layout('layouts.guest');
     }
 }
