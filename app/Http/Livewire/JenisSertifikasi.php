@@ -8,6 +8,6 @@ class JenisSertifikasi extends Component
 {
     public function render()
     {
-        return view('livewire.jenis-sertifikasi');
+        return view('livewire.jenis-sertifikasi')->extends('layouts.guest');
     }
 }

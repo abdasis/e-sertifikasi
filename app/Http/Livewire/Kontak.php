@@ -8,6 +8,6 @@ class Kontak extends Component
 {
     public function render()
     {
-        return view('livewire.kontak');
+        return view('livewire.kontak')->extends('layouts.guest');
     }
 }
