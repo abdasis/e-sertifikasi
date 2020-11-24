@@ -10,7 +10,7 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-img-top">
-                        <img src="{{ asset('backend/images/1591933082-PRO ISO 9001 pnfx RMI Ed.png') }}" class="w-100" alt="">
+                        <img src="{{ asset('frontend/images/1591933082-PRO ISO 9001 pnfx RMI Ed.png') }}" class="w-100" alt="">
                     </div>
                     <h3 class="card-title text-center">SERTIFIKASI ISO 9001</h3>
                     <div class="card-body text-center">
@@ -21,7 +21,7 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-img-top">
-                        <img src="{{ asset('backend/images/1591933155-PRO ISO 14001 pnfx RMI Ed.png') }}" class="w-100" alt="">
+                        <img src="{{ asset('frontend/images/1591933155-PRO ISO 14001 pnfx RMI Ed.png') }}" class="w-100" alt="">
                     </div>
                     <h3 class="card-title text-center">SERTIFIKASI ISO 14001</h3>
                     <div class="card-body text-center">
@@ -32,7 +32,7 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-img-top">
-                        <img src="{{ asset('backend/images/1591933216-OHSAS 18001 pnfx RMI Ed.png') }}" class="w-100" alt="">
+                        <img src="{{ asset('frontend/images/1591933216-OHSAS 18001 pnfx RMI Ed.png') }}" class="w-100" alt="">
                     </div>
                     <h3 class="card-title text-center">SERTIFIKASI ISO 18001</h3>
                     <div class="card-body text-center">
@@ -43,7 +43,7 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-img-top">
-                        <img src="{{ asset('backend/images/1591933243-PRO ISO 27001 pnfx RMI Ed.png') }}" class="w-100" alt="">
+                        <img src="{{ asset('frontend/images/1591933243-PRO ISO 27001 pnfx RMI Ed.png') }}" class="w-100" alt="">
                     </div>
                     <h3 class="card-title text-center">SERTIFIKASI ISO 27001:2013</h3>
                     <div class="card-body text-center">
@@ -54,7 +54,7 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-img-top">
-                        <img src="{{ asset('backend/images/1591934118-PRO ISO 22000 pnfx RMI Ed.png') }}" class="w-100" alt="">
+                        <img src="{{ asset('frontend/images/1591934118-PRO ISO 22000 pnfx RMI Ed.png') }}" class="w-100" alt="">
                     </div>
                     <h3 class="card-title text-center">SERTIFIKASI ISO 9001</h3>
                     <div class="card-body text-center">
@@ -65,7 +65,7 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-img-top">
-                        <img src="{{ asset('backend/images/1591934311-audit & pelatihan.png') }}" class="w-100" alt="">
+                        <img src="{{ asset('frontend/images/1591934311-audit & pelatihan.png') }}" class="w-100" alt="">
                     </div>
                     <h3 class="card-title text-center">SERTIFIKASI ISO 9001</h3>
                     <div class="card-body text-center">
@@ -115,9 +115,9 @@
                         </div>
                         <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-7">
                             <div class="home-img position-relative">
-                                <img src="backend/images/home-img.png" alt="" class="home-first-img">
-                                <img src="backend/images/home-img.png" alt="" class="home-second-img mx-auto d-block">
-                                <img src="backend/images/home-img.png" alt="" class="home-third-img">
+                                <img src="frontend/images/home-img.png" alt="" class="home-first-img">
+                                <img src="frontend/images/home-img.png" alt="" class="home-second-img mx-auto d-block">
+                                <img src="frontend/images/home-img.png" alt="" class="home-third-img">
                             </div>
                         </div>
                     </div>
