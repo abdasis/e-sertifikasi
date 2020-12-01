@@ -72,10 +72,10 @@
                         <div class="collapse" id="sertifikat">
                             <ul class="nav-second-level">
                                 <li>
-                                    <a href="ecommerce-dashboard.html">Tambah Sertifikat</a>
+                                    <a href="{{ route('sertifikasi.create') }}">Tambah Sertifikat</a>
                                 </li>
                                 <li>
-                                    <a href="ecommerce-dashboard.html">Semua Sertifikat</a>
+                                    <a href="{{ route('sertifikasi.index') }}">Semua Sertifikat</a>
                                 </li>
                             </ul>
                         </div>
