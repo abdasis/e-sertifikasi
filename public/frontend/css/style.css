@@ -178,8 +178,8 @@ p {
   margin-top: 0px;
   padding: 10px 0px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0 10px 33px -14px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 33px -14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05), 0 1px 7px rgba(0, 0, 0, .04);
+
 }
 
 .nav-sticky.navbar-custom .logo .logo-dark {
@@ -615,3 +615,7 @@ p {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+.shadow-md {
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .05), 0 1px 9px rgba(0, 0, 0, .04);
+}

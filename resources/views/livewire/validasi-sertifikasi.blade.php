@@ -1,21 +1,21 @@
 <div>
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-md-7">
-                <div class="card my-5 shadow-sm shadow-outline-teal">
+            <div class="col-md-5">
+                <div class="card my-5 shadow-md shadow-outline-teal">
                     <h5 class="card-header bg-white border-bottom">
                         Validasi Sertifikat
                     </h5>
                     <div class="card-body">
-                        <form >
+                        <form wire:submit.prevent='validasiSertifikasi'>
                             <div class="form-group">
                               <label for="">Company Name</label>
-                              <input type="text" name="" id="" class="form-control" placeholder="Company Name" aria-describedby="helpId">
+                              <input type="text" name="" wire:model='nama_perusahaan' id="" class="form-control" placeholder="Company Name" aria-describedby="helpId">
                             </div>
 
                             <div class="form-group">
                               <label for="certificate_number">Certifikate Number</label>
-                              <input type="text" name="certificate_number" id="certificate_number" class="form-control" placeholder="Certificate Number" aria-describedby="helpId">
+                              <input type="text" name="certificate_number" wire:model='certificate_number' id="certificate_number" class="form-control" placeholder="Certificate Number" aria-describedby="helpId">
                             </div>
 
                             <div class="form-group">
@@ -25,6 +25,62 @@
                     </div>
                 </div>
             </div>
+            @if (!empty($sertifikat))
+            <div class="col-md-7">
+                <div class="card my-5 shadow-md shadow-outline-teal">
+                    <h5 class="card-header bg-white border-bottom">Detail Sertifikasi</h5>
+                    <div class="card-body">
+
+                        <table class="table table-sm table-responsive">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Perusahaan</td>
+                                    <td>:</td>
+                                    <td>{{ $sertifikat->perusahaan }}</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">ID Sertifikasi</td>
+                                    <td>:</td>
+                                    <td>{{ $sertifikat->id_sertifikasi }}</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Alamat</td>
+                                    <td>:</td>
+                                    <td>{{ $sertifikat->alamat }}</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Standard</td>
+                                    <td>:</td>
+                                    <td>{{ $sertifikat->standard }}</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Submit</td>
+                                    <td>:</td>
+                                    <td>{{ $sertifikat->submit }}</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Surveilance 1</td>
+                                    <td>:</td>
+                                    <td>{{ $sertifikat->surveilance_1 }}</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Surveilance 2</td>
+                                    <td>:</td>
+                                    <td>{{ $sertifikat->surveilance_2 }}</td>
+                                </tr>
+
+                                <tr>
+                                    <td scope="row">Expired</td>
+                                    <td>:</td>
+                                    <td>{{ $sertifikat->expired }}</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            @endif
         </div>
     </div>
 </div>
