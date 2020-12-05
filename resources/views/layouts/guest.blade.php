@@ -48,6 +48,8 @@
         <!-- custom js -->
         <script src="{{ asset('frontend/js/app.js') }}"></script>
         <script src="{{ mix('/js/app.js') }}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        @stack('js')
 
     </body>
 </html>

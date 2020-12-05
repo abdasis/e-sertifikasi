@@ -6,6 +6,7 @@ use App\Http\Livewire\Profile;
 use App\Http\Livewire\Service;
 use App\Http\Livewire\ValidasiSertifikasi;
 use App\Http\Livewire\JenisSertifikasi;
+use App\Http\Livewire\PesertaIso\Pendaftaran;
 use App\Http\Livewire\Sertifikasi\Create;
 use App\Http\Livewire\Sertifikasi\Index;
 use App\Http\Livewire\Sertifikasi\Show;
@@ -31,6 +32,7 @@ Route::get('validasi', ValidasiSertifikasi::class)->name('validasi');
 Route::get('service', Service::class)->name('service');
 Route::get('jenis-sertifikasi', JenisSertifikasi::class)->name('jenis-sertifikasi');
 Route::get('contact-us', Kontak::class)->name('contact-us');
+Route::get('pendaftaran-iso', Pendaftaran::class)->name('peserta-iso.pendfataran');
 
 
 Route::group(['prefix' => 'admin'], function () {
