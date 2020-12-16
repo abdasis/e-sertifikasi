@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Livewire\Beranda;
+use App\Http\Livewire\Iso\Create as IsoCreate;
+use App\Http\Livewire\Iso\Index as IsoIndex;
+use App\Http\Livewire\Iso\Update as IsoUpdate;
 use App\Http\Livewire\Kontak;
 use App\Http\Livewire\Profile;
 use App\Http\Livewire\Service;
@@ -30,7 +33,7 @@ Route::get('profile', Profile::class)->name('profile');
 Route::get('training', Training::class)->name('training');
 Route::get('validasi', ValidasiSertifikasi::class)->name('validasi');
 Route::get('service', Service::class)->name('service');
-Route::get('jenis-sertifikasi', JenisSertifikasi::class)->name('jenis-sertifikasi');
+Route::get('jenis-sertifikasi/{slug}', JenisSertifikasi::class)->name('jenis-sertifikasi');
 Route::get('contact-us', Kontak::class)->name('contact-us');
 Route::get('pendaftaran-iso', Pendaftaran::class)->name('peserta-iso.pendfataran');
 
@@ -41,6 +44,11 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/tambah', Create::class)->name('sertifikasi.create');
         Route::get('/update/{id}', Update::class)->name('sertifikasi.update');
         Route::get('/show/{id}', Show::class)->name('sertifikasi.show');
+    });
+    Route::group(['prefix' => 'iso'], function () {
+        Route::get('/', IsoIndex::class)->name('iso.index');
+        Route::get('tambah-iso', IsoCreate::class)->name('iso.create');
+        Route::get('update-iso/{slug}', IsoUpdate::class)->name('iso.update');
     });
 });
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

@@ -638,6 +638,6 @@ p {
 }
 
 .carousel-inner img {
-    height: 600;
+    height: 600px;
     object-fit: cover;
 }

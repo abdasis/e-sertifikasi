@@ -48,7 +48,7 @@
                                 <td>{{ $sertification->standard }}</td>
                                 <td>{{ $sertification->surveilance_1 }}</td>
                                 <td>{{ $sertification->surveilance_2 }}</td>
-                                <td>{{ Carbon\Carbon::parse($sertification->expired)->diffInDays(Carbon\Carbon::now()) }} Hari</td>
+                                <td>{{ $sertification->expired }}</td>
                                 <td>
                                     <div class="btn-group-justified">
                                         <button class="btn btn-sm btn-outline-warning"><i class="fa fa-edit"></i></button>

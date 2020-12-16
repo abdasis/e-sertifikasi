@@ -57,7 +57,7 @@
                         <div class="collapse" id="sidebarEcommerce">
                             <ul class="nav-second-level">
                                 <li>
-                                    <a href="ecommerce-dashboard.html">Data ISO</a>
+                                    <a href="{{ route('iso.index') }}">Data ISO</a>
                                 </li>
                             </ul>
                         </div>

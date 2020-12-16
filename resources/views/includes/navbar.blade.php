@@ -20,9 +20,17 @@
                 <li class="nav-item">
                     <a href="{{ route('service') }}" class="nav-link">Service</a>
                 </li>
-                <li class="nav-item">
-                    <a href="{{ route('jenis-sertifikasi') }}" class="nav-link">Sertifikasi</a>
-                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Sertifikasi
+                      <span><i class="mdi mdi-menu-down"></i></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions">
+                      @foreach (App\Models\Iso::all() as $iso)
+                      <a class="dropdown-item active" href="{{ route('jenis-sertifikasi', $iso->slug) }}">{{ $iso->jenis_iso }}</a>
+                      @endforeach
+                    </div>
+                  </li>
                 <li class="nav-item">
                     <a href="{{ route('training') }}" class="nav-link">Trainig</a>
                 </li>

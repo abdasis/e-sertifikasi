@@ -87,30 +87,43 @@
 
 
 @push('banner')
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="{{ asset('/frontend/images/slider/pexels-photo-110469.jpeg') }}" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="{{ asset('/frontend/images/slider/pexels-photo-110469.jpeg') }}" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="{{ asset('/frontend/images/slider/pexels-photo-187041(1).jpeg') }}" alt="Third slide">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+    <section class="bg-home bg-gradient" id="home">
+        <div class="home-center">
+            <div class="home-desc-center">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="home-title mo-mb-20">
+                                <h1 class="mb-4 text-white">Lembaga Sertifikasi Online</h1>
+                                <p class="text-white-50 home-desc mb-5">Simpan dan Cetak Online </p>
+                                <div class="subscribe">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="mb-2">
+                                                    <input type="text" class="form-control" placeholder="Enter your e-mail address">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <button type="submit" class="btn btn-primary">Subscribe Us</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-7">
+                            <div class="home-img position-relative">
+                                <img src="images/home-img.png" alt="" class="home-first-img">
+                                <img src="images/home-img.png" alt="" class="home-second-img mx-auto d-block">
+                                <img src="images/home-img.png" alt="" class="home-third-img">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container-fluid -->
+            </div>
+        </div>
+    </section>
 @endpush
