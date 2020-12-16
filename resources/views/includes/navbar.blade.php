@@ -22,7 +22,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Sertifikasi
+                      Jenis Sertifikasi
                       <span><i class="mdi mdi-menu-down"></i></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions">
