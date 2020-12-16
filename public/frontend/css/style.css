@@ -608,6 +608,10 @@ p {
     .mo-mb-20 {
         margin-bottom: 20px !important;
     }
+
+    .carousel-inner img{
+        height: 300px !important;
+    }
 }
 
 @media (max-width: 425px) {

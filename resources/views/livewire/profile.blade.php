@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row my-5">
             <div class="col-md-12 ">
-                <div class="about-content shadow border p-5">
+                <div class="about-content shadow border p-2">
                     <h2 class="text-center">
                         RAJAWALI MUTU MANUNGGAL INDONESIA - RMICERTIFICATION
                     </h2>

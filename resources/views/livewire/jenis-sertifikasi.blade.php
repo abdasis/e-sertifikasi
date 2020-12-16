@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <div class="card my-5 p-4">
+                <div class="card my-5 p-2">
                     <h1 class="card-title">
                         {{ $jenisSertifikasi->jenis_iso }}
                     </h1>
