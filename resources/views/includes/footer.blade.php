@@ -1,63 +1,40 @@
 <footer class="bg-dark footer">
     <div class="container-fluid">
         <div class="row mb-5">
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <div class="pr-lg-4">
-                    <div class="mb-4">
-                        <img src="images/logo-light.png" alt="" height="20">
-                    </div>
-                    <p class="text-white-50">Tentang Kami</p>
+                    <p class="text-white font-weight-bold">TENTANG KAMI</p>
                     <p class="text-white-50">Dengan didukung tenaga auditor profesional, Mutu Certification International berkomitmen untuk menyediakan jasa sertifikasi sistem manajemen mutu berdasarkan standar ISO 9001, ISO 14001, OHSAS 18001, ISO 27001:2013, ISO 22000:2005 secara tepat, akurat, independen, terpercaya, dan profesional.
                     </p>
                 </div>
             </div>
 
-            <div class="col-lg-2">
+            <div class="col-lg-3">
                 <div class="footer-list">
-                    <p class="text-white mb-2 footer-list-title">About</p>
+                    <p class="text-white mb-2 footer-list-title font-weight-bold">JENIS SERTIFIKASI</p>
                     <ul class="list-unstyled">
-                        <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>Home</a></li>
-                        <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>Features</a></li>
-                        <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>Faq</a></li>
-                        <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>Clients</a></li>
+                        @foreach (App\Models\Iso::latest()->get() as $iso)
+                        <li><a href="{{ route('jenis-sertifikasi', $iso->slug) }}"><i class="mdi mdi-chevron-right mr-2"></i>{{ $iso->jenis_iso }}</a></li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
 
-            <div class="col-lg-2">
+            <div class="col-lg-3">
                 <div class="footer-list">
-                    <p class="text-white mb-2 footer-list-title">Social</p>
+                    <p class="text-white mb-2 footer-list-title font-weight-bold">ALAMAT KAMI</p>
                     <ul class="list-unstyled">
-                        <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>Facebook </a></li>
-                        <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>Twitter</a></li>
-                        <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>Behance</a></li>
-                        <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>Dribble</a></li>
+                        <li><a href="#"><i class="mdi mdi-map-marker mr-2"></i>Taman Alamanda Blok Aa 1 No 53
+                            Bekasi - INDONESIA</a></li>
+                        <li><a href="#"><i class="mdi mdi-phone mr-2"></i>021 8265 4053</a></li>
+                        <li><a href="#"><i class="mdi mdi-phone mr-2"></i>0812 8100 8374</a></li>
+                        <li><a href="#"><i class="mdi mdi-whatsapp mr-2"></i>0812 8413 4025</a></li>
+                        <li><a href="#"><i class="mdi mdi-email mr-2"></i>marketing@rmicertification.co.id</a></li>
+                        <li><a href="#"><i class="mdi mdi-firefox mr-2"></i>rmicertification.co.id</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="col-lg-2">
-                <div class="footer-list">
-                    <p class="text-white mb-2 footer-list-title">Support</p>
-                    <ul class="list-unstyled">
-                        <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>Help & Support</a></li>
-                        <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>Privacy Policy</a></li>
-                        <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>Terms & Conditions</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-lg-2">
-                <div class="footer-list">
-                    <p class="text-white mb-2 footer-list-title">More Info</p>
-                    <ul class="list-unstyled">
-                        <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>Pricing</a></li>
-                        <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>For Marketing</a></li>
-                        <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>For Agencies</a></li>
-                        <li><a href="#"><i class="mdi mdi-chevron-right mr-2"></i>Our Apps</a></li>
-                    </ul>
-                </div>
-            </div>
         </div>
         <!-- end row -->
 
