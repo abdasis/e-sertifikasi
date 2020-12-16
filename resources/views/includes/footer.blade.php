@@ -41,17 +41,19 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="float-left pull-none">
-                    <p class="text-white-50">2015 - 2020 © Sertifikasi Manajemen.</p>
+                    <p class="text-white-50">
+                        Sertifikasi Manajemen ISO 9001, ISO 14001, OHSAS 18001, ISO 27001:2013, ISO 22000:2005
+                    </p>
                 </div>
                 <div class="float-right pull-none">
                     <ul class="list-inline social-links">
                         <li class="list-inline-item text-white-50">
                             Social :
                         </li>
-                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="mdi mdi-google-plus"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100016588489016"><i class="mdi mdi-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/rmicert_rmi"><i class="mdi mdi-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/rmicertification/"><i class="mdi mdi-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://plus.google.com/u/0/"><i class="mdi mdi-google-plus"></i></a></li>
                     </ul>
                 </div>
             </div>
