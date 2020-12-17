@@ -21,6 +21,22 @@
             <div class="card">
                 <h5 class="card-header bg-white border-bottom">Form Penambahan Sertifikat</h5>
                 <div class="card-body">
+                    @if ($statusUpdate)
+                    <form wire:submit.prevent='update'>
+                        <div class="form-group">
+                            <label for="">Nama Menu</label>
+                            <input type="text" class="form-control shadow-none" wire:model='nama' placeholder="Masukan Nama Menu">
+                        </div>
+                        <div class="form-group" wire:ignore>
+                          <label for="diskripsi">Link</label>
+                          <input type="text" class="form-control shadow-none" wire:model='link' placeholder="Masukan Link">
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-info font-weight-bolder shadow-none">SIMPAN</button>
+                        </div>
+                    </form>
+                    @else
                     <form wire:submit.prevent='store'>
                         <div class="form-group">
                             <label for="">Nama Menu</label>
@@ -35,7 +51,19 @@
                             <button class="btn btn-info font-weight-bolder shadow-none">SIMPAN</button>
                         </div>
                     </form>
+                    @endif
                 </div>
+
+                <hr>
+
+                <div class="card-body">
+                    <div class="alert alert-info">Link silahkan bisa salin dari data dibawah ini</div>
+                </div>
+                <ul>
+                    @foreach ($isos as $iso)
+                    <li>{{ $iso->nama_iso }} | <code>{{ url('/') }}/{{ $iso->slug }}</code></li>
+                    @endforeach
+                </ul>
             </div>
         </div>
         <div class="col-md-7">
@@ -56,7 +84,10 @@
                             <td class="text-center">{{ $key+1 }}</td>
                             <td>{{ $menu->nama }}</td>
                             <td>{{ $menu->link }}</td>
-                            <td></td>
+                            <td>
+                                <button class="btn btn-sm btn-warning" wire:click='edit({{ $menu->id }})'><i class="fa fa-edit"></i></button>
+                                <button class="btn btn-sm btn-danger" wire:click='delete({{ $menu->id }})'><i class="fa fa-trash-alt"></i></button>
+                            </td>
                         </tr>
                         @endforeach
                     </tbody>
