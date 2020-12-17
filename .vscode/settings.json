@@ -12,6 +12,19 @@
             "database": "sertifikat",
             "username": "root",
             "password": ""
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Sertifikasi",
+            "database": "sertifikasi",
+            "username": "root",
+            "password": ""
         }
     ],
     "git.ignoreLimitWarning": true

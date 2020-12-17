@@ -23,6 +23,10 @@
                 <div class="card-body">
                     <form wire:submit.prevent='update'>
                         <div class="form-group">
+                            <label for="">Nama ISO</label>
+                            <input type="text" class="form-control shadow-none" wire:model='nama' placeholder="Masukan Nama ISO">
+                        </div>
+                        <div class="form-group">
                             <label for="">Jenis ISO</label>
                             <input type="text" class="form-control shadow-none" wire:model='jenis_iso' placeholder="Masukan Nama Perusahaan">
                         </div>

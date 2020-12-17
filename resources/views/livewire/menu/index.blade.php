@@ -6,33 +6,29 @@
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">ISO</a></li>
-                        <li class="breadcrumb-item active">Tambah</li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Menu</a></li>
+                        <li class="breadcrumb-item active">Index</li>
                     </ol>
                 </div>
-                <h4 class="page-title">Tambah Jenis ISO</h4>
+                <h4 class="page-title">Semua Menu</h4>
             </div>
         </div>
     </div>
     <!-- end page title -->
 
     <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-5">
             <div class="card">
                 <h5 class="card-header bg-white border-bottom">Form Penambahan Sertifikat</h5>
                 <div class="card-body">
                     <form wire:submit.prevent='store'>
                         <div class="form-group">
-                            <label for="">Nama ISO</label>
-                            <input type="text" class="form-control shadow-none" wire:model='nama' placeholder="Masukan Nama ISO">
-                        </div>
-                        <div class="form-group">
-                            <label for="">Jenis ISO</label>
-                            <input type="text" class="form-control shadow-none" wire:model='jenis_iso' placeholder="Masukan Nama Perusahaan">
+                            <label for="">Nama Menu</label>
+                            <input type="text" class="form-control shadow-none" wire:model='nama' placeholder="Masukan Nama Menu">
                         </div>
                         <div class="form-group" wire:ignore>
-                          <label for="diskripsi">Diskripsi ISO</label>
-                          <textarea class="form-control shadow-none" wire:model="diskripsi"rows="3"></textarea>
+                          <label for="diskripsi">Link</label>
+                          <input type="text" class="form-control shadow-none" wire:model='link' placeholder="Masukan Link">
                         </div>
 
                         <div class="form-group">
@@ -40,6 +36,31 @@
                         </div>
                     </form>
                 </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="card">
+                <h5 class="card-header bg-white border-bottom">Daftar Halaman Aktif</h5>
+                <table class="card-body table-sm">
+                    <thead class="bg-light">
+                        <tr>
+                            <th class="text-center">No.</th>
+                            <th>Nama</th>
+                            <th>Alamat</th>
+                            <th>Option</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($menus as $key => $menu)
+                        <tr>
+                            <td class="text-center">{{ $key+1 }}</td>
+                            <td>{{ $menu->nama }}</td>
+                            <td>{{ $menu->link }}</td>
+                            <td></td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

@@ -26,8 +26,8 @@
                       <span><i class="mdi mdi-menu-down"></i></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions">
-                      @foreach (App\Models\Iso::all() as $iso)
-                      <a class="dropdown-item active" href="{{ route('jenis-sertifikasi', $iso->slug) }}">{{ $iso->jenis_iso }}</a>
+                      @foreach (App\Models\Menu::all() as $iso)
+                      <a class="dropdown-item active" href="{{ route('jenis-sertifikasi', $iso->link) }}">{{ $iso->nama }}</a>
                       @endforeach
                     </div>
                   </li>

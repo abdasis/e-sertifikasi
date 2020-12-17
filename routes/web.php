@@ -9,6 +9,8 @@ use App\Http\Livewire\Profile;
 use App\Http\Livewire\Service;
 use App\Http\Livewire\ValidasiSertifikasi;
 use App\Http\Livewire\JenisSertifikasi;
+use App\Http\Livewire\Menu\Index as MenuIndex;
+use App\Http\Livewire\Menu\Update as MenuUpdate;
 use App\Http\Livewire\PesertaIso\Pendaftaran;
 use App\Http\Livewire\Sertifikasi\Create;
 use App\Http\Livewire\Sertifikasi\Index;
@@ -49,6 +51,10 @@ Route::group(['prefix' => 'admin'], function () {
         Route::get('/', IsoIndex::class)->name('iso.index');
         Route::get('tambah-iso', IsoCreate::class)->name('iso.create');
         Route::get('update-iso/{slug}', IsoUpdate::class)->name('iso.update');
+    });
+    Route::group(['prefix' => 'menu'], function () {
+        Route::get('/', MenuIndex::class)->name('menu.index');
+        Route::get('update/{id}', MenuUpdate::class)->name('menu.update');
     });
 });
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
