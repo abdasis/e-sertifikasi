@@ -138,6 +138,7 @@ p {
     margin-bottom: 0px;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    background: white;
 }
 
 .navbar-custom .logo .logo-light {
@@ -150,7 +151,7 @@ p {
 
 .navbar-custom .navbar-nav .nav-item .nav-link {
     line-height: 26px;
-    color: rgba(255, 255, 255, 0.6);
+    color: #333;
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
     background-color: transparent !important;
@@ -161,18 +162,18 @@ p {
 
 .navbar-custom .navbar-nav .nav-item .nav-link:hover,
 .navbar-custom .navbar-nav .nav-item .nav-link:active {
-    color: #ffffff;
+    color: #333;
 }
 
 .navbar-custom .navbar-nav .nav-item.active .nav-link {
-    color: #ffffff;
+    color: #333;
 }
 
 .navbar-toggler {
     font-size: 24px;
     margin-top: 5px;
     margin-bottom: 0px;
-    color: #ffffff;
+    color: #333;
 }
 
 /*--- navbar sticky ---*/

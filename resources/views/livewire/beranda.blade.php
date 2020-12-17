@@ -10,31 +10,31 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-img-top">
-                        <img src="{{ asset('frontend/images/1591933082-PRO ISO 9001 pnfx RMI Ed.png') }}" class="w-100" alt="">
+                        <img src="{{ asset('frontend/images/PRO ISO 9001 pnfx RMI Ed.png') }}" class="w-100" alt="">
                     </div>
-                    <h3 class="card-title text-center">SERTIFIKASI ISO 9001</h3>
+                    <h3 class="card-title text-center">Sertifikasi ISO 9001:2015</h3>
                     <div class="card-body text-center">
-                        Salah satu cara untuk menjadi perusahaan yang kompetitif adalah dengan mengikuti sistem manajemen mutu yang disarankan dalam standar ISO 9001
+                        Salah satu cara untuk menjadi perusahaan yang kompetitif adalah dengan mengikuti sistem manajemen mutu yang disarankan dalam standar ISO 9001:2015
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-img-top">
-                        <img src="{{ asset('frontend/images/1591933155-PRO ISO 14001 pnfx RMI Ed.png') }}" class="w-100" alt="">
+                        <img src="{{ asset('frontend/images/PRO ISO 14001 pnfx RMI Ed.png') }}" class="w-100" alt="">
                     </div>
-                    <h3 class="card-title text-center">SERTIFIKASI ISO 14001</h3>
+                    <h3 class="card-title text-center">Sertifikasi ISO 14001:2015</h3>
                     <div class="card-body text-center">
-                        SO 14001 merupakan spesifikasi internasional untuk sistem manajemen lingkungan yang membantu perusahaan Anda mengatur risiko-risiko lingkungan
+                        ISO 14001:2015 merupakan spesifikasi internasional untuk sistem manajemen lingkungan yang membantu perusahaan Anda mengatur risiko-risiko lingkungan
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-img-top">
-                        <img src="{{ asset('frontend/images/1591933216-OHSAS 18001 pnfx RMI Ed.png') }}" class="w-100" alt="">
+                        <img src="{{ asset('frontend/images/OHSAS 18001 pnfx RMI Ed.png') }}" class="w-100" alt="">
                     </div>
-                    <h3 class="card-title text-center">SERTIFIKASI ISO 18001</h3>
+                    <h3 class="card-title text-center">Sertifikasi OHSAS 18001:2007</h3>
                     <div class="card-body text-center">
                         OHSAS 1800: 2007 Sertifikasi Manajemen untuk Keselamatan dan Kesehatan Kerja, Merupakan standar internasional erkait dengan kesehatan dan keselamatan dalam perusahaan Anda
                     </div>
@@ -43,9 +43,20 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-img-top">
-                        <img src="{{ asset('frontend/images/1591933243-PRO ISO 27001 pnfx RMI Ed.png') }}" class="w-100" alt="">
+                        <img src="{{ asset('frontend/images/PRO ISO 45001 pnfx RMI Ed.png') }}" class="w-100" alt="">
                     </div>
-                    <h3 class="card-title text-center">SERTIFIKASI ISO 27001:2013</h3>
+                    <h3 class="card-title text-center">Sertifikasi ISO 45001:2018</h3>
+                    <div class="card-body text-center">
+                        ISO 45001: 2018 manajemen kesehatan dan keselamatan kerja menyediakan pendekatan yang digerakkan proses untuk mengendalikan dan memantau risiko yang dapat timbul dari kegiatan sehari-hari perusahaan.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top">
+                        <img src="{{ asset('frontend/images/PRO ISO 27001 pnfx RMI Ed.png') }}" class="w-100" alt="">
+                    </div>
+                    <h3 class="card-title text-center">Sertifikasi ISO 27001:2013</h3>
                     <div class="card-body text-center">
                         ISO 27001:2013 Sertifikasi Manajemen Keamanan Informasi adalah sebuah rencana manajemen yang menspesifikasikan kebutuhan-kebutuhan yang diperlkukan untuk implementasi kontrol keamanan yang telah disesuaikan dengan kebutuhan
                     </div>
@@ -54,22 +65,11 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-img-top">
-                        <img src="{{ asset('frontend/images/1591934118-PRO ISO 22000 pnfx RMI Ed.png') }}" class="w-100" alt="">
+                        <img src="{{ asset('frontend/images/PRO ISO 22000 pnfx RMI Ed.png') }}" class="w-100" alt="">
                     </div>
-                    <h3 class="card-title text-center">SERTIFIKASI ISO 9001</h3>
+                    <h3 class="card-title text-center">Sertifikasi ISO 22000:2005</h3>
                     <div class="card-body text-center">
-                        ISO 22000 adalah suatu standar internasional yang dikembangkan dengan menggunakan pendekatan Sistem Manajemen Mutu (ISO 9001) dan beberapa penyesuaian yang dapat diterapkan, dengan menggabungkan elemen utama ISO 9001 dan HACC
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-img-top">
-                        <img src="{{ asset('frontend/images/1591934311-audit & pelatihan.png') }}" class="w-100" alt="">
-                    </div>
-                    <h3 class="card-title text-center">SERTIFIKASI ISO 9001</h3>
-                    <div class="card-body text-center">
-                        Pelatihan ISO yang dilakukan serentak untuk berbagai kalangan, baik karyawan / staff & posisi lainnya dan Kami melakukan audit internal pada perusahaan & institusi untuk memastikan proses bisnis sudah sesuai pada standar.
+                        ISO 22000:2005 adalah suatu standar internasional yang dikembangkan dengan menggunakan pendekatan Sistem Manajemen Mutu (ISO 9001) dan beberapa penyesuaian yang dapat diterapkan, dengan menggabungkan elemen utama ISO 9001 dan HACC
                     </div>
                 </div>
             </div>
@@ -79,7 +79,6 @@
                 <h2 class="text-center">Sertifikasi Manajemen ISO</h2>
                 <p class="text-center">
                     Layanan kami meliputi sertifikasi system manajemen ISO 9001:2015 ISO 14001:2015 OHSAS 18001:2007 dan ISO 27001:2013. Disamping Kami juga menyediakan layanan training dan pelatihan system manajemen dan training terkait lainnya. kami memiliki sumber daya yang kompeten dan handal, Ketepatan, kualitas layanan, respon time, kendali mutu dan integritas merupakan modal utama kami sebagai lembaga yang terdepan di sertifikasi ISO dan training di Indonesia.
-
                 </p>
             </div>
         </div>

@@ -2,8 +2,8 @@
     <div class="container-fluid">
         <!-- LOGO -->
         <a class="logo text-uppercase" href="index.html">
-            <img src="{{ asset('images/1492097807-logo.png') }}" alt="" class="logo-light" height="40" />
-            <img src="{{ asset('images/1492097807-logo.png') }}" alt="" class="logo-dark" height="40" />
+            <img src="{{ asset('frontend/images/1492097807-logo.png') }}" alt="" class="logo-light" height="40" />
+            <img src="{{ asset('frontend/images/1492097807-logo.png') }}" alt="" class="logo-dark" height="40" />
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
