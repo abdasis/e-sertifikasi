@@ -64,6 +64,14 @@
                     </li>
 
                     <li>
+                        <a href="{{ route('menu.index') }}">
+                            <i class="mdi mdi-database"></i>
+                            <span> Data Master </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                    </li>
+
+                    <li>
                         <a href="#sertifikat" data-toggle="collapse">
                             <i class="mdi mdi-file-document"></i>
                             <span> Sertifikasi </span>
