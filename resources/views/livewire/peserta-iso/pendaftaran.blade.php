@@ -13,9 +13,9 @@
                                     <label for="standar_sertifikasi">Pilih Standar Sertifikasi</label>
                                     <select class="custom-select" wire:model="standar_sertifikasi" id="standar_sertifikasi">
                                         <option selected>Pilih Standar</option>
-                                        <option value="ISO 9001">ISO 9001</option>
-                                        <option value="14001">14001</option>
-                                        <option value="">OHSAS 18001</option>
+                                        @foreach (App\Models\Iso::latest()->get() as $iso)
+                                            <option value="{{ $iso->jenis_iso }}">{{ $iso->nama_iso }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                                 <div class="col">
