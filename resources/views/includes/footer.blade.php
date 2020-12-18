@@ -24,8 +24,7 @@
                 <div class="footer-list">
                     <p class="text-white mb-2 footer-list-title font-weight-bold">ALAMAT KAMI</p>
                     <ul class="list-unstyled">
-                        <li><a href="#"><i class="mdi mdi-map-marker mr-2"></i>Taman Alamanda Blok Aa 1 No 53
-                            Bekasi - INDONESIA</a></li>
+                        <li><a href="#"><i class="mdi mdi-map-marker mr-2"></i>Satria square  A.19, Karangsatria  Bekasi - INDONESIA</a></li>
                         <li><a href="#"><i class="mdi mdi-phone mr-2"></i>021 8265 4053</a></li>
                         <li><a href="#"><i class="mdi mdi-phone mr-2"></i>0812 8100 8374</a></li>
                         <li><a href="#"><i class="mdi mdi-whatsapp mr-2"></i>0812 8413 4025</a></li>

@@ -19,7 +19,7 @@ class ValidasiSertifikasi extends Component
     public function validasiSertifikasi()
     {
         $this->validate();
-        $this->getSertifikat = Sertifikasi::where('perusahaan', $this->nama_perusahaan)->where('id_sertifikasi', $this->certificate_number)->first();
+        $this->getSertifikat = Sertifikasi::where('perusahaan', $this->nama_perusahaan)->orWhere('id_sertifikasi', $this->certificate_number)->first();
     }
     public function render()
     {
