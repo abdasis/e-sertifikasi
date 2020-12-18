@@ -41,7 +41,10 @@
                     <a href="{{ route('contact-us') }}" class="nav-link">Contact</a>
                 </li>
             </ul>
-            <button class="btn btn-light navbar-btn">Daftar Sekarang</button>
+            <a href="{{ route('peserta-iso.pendaftaran') }}">
+                <button class="btn btn-light navbar-btn">Daftar Sekarang</button>
+            </a>
+
         </div>
     </div>
 </nav>

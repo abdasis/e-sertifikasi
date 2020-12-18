@@ -37,7 +37,7 @@ Route::get('validasi', ValidasiSertifikasi::class)->name('validasi');
 Route::get('service', Service::class)->name('service');
 Route::get('jenis-sertifikasi/{slug}', JenisSertifikasi::class)->name('jenis-sertifikasi');
 Route::get('contact-us', Kontak::class)->name('contact-us');
-Route::get('pendaftaran-iso', Pendaftaran::class)->name('peserta-iso.pendfataran');
+Route::get('pendaftaran-iso', Pendaftaran::class)->name('peserta-iso.pendaftaran');
 
 
 Route::group(['prefix' => 'admin'], function () {

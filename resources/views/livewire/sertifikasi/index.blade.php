@@ -24,7 +24,7 @@
                 </h5>
 
                 <div class="card-body">
-                    <table class="table table-sm">
+                    <table class="table table-sm table-responsive">
                         <thead>
                             <tr>
                                 <th>No.</th>
@@ -60,7 +60,11 @@
                             @endforeach
                         </tbody>
                     </table>
+                    <div>
+                        {{ $sertifications->links() }}
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
