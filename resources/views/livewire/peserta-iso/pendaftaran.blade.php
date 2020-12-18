@@ -14,7 +14,7 @@
                                     <select class="custom-select" wire:model="standar_sertifikasi" id="standar_sertifikasi">
                                         <option selected>Pilih Standar</option>
                                         @foreach (App\Models\Iso::latest()->get() as $iso)
-                                            <option value="{{ $iso->jenis_iso }}">{{ $iso->nama_iso }}</option>
+                                            <option value="{{ $iso->jenis_iso }}">{{ $iso->jenis_iso }}</option>
                                         @endforeach
                                     </select>
                                 </div>
