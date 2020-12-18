@@ -44,7 +44,7 @@
             <a href="{{ route('peserta-iso.pendaftaran') }}">
                 <button class="btn btn-light navbar-btn">Daftar Sekarang</button>
             </a>
-            
+
         </div>
     </div>
 </nav>

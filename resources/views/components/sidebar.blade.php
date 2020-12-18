@@ -65,9 +65,8 @@
 
                     <li>
                         <a href="{{ route('menu.index') }}">
-                            <i class="mdi mdi-database"></i>
-                            <span> Data Master </span>
-                            <span class="menu-arrow"></span>
+                            <i class="mdi mdi-view-list"></i>
+                            <span> Menu </span>
                         </a>
                     </li>
 
