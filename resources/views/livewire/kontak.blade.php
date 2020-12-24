@@ -10,25 +10,25 @@
                         Form Contact
                     </h5>
                     <div class="card-body">
-                        <form >
+                        <form wire:submit.prevent='send'>
                             <div class="form-group">
                               <label for="">Nama Anda</label>
-                              <input type="text" name="" id="" class="form-control" placeholder="Company Name" aria-describedby="helpId">
+                              <input type="text" wire:model='nama' id="" class="form-control" aria-describedby="helpId">
                             </div>
 
                             <div class="form-group">
                               <label for="certificate_number">Email Anda</label>
-                              <input type="text" name="certificate_number" id="certificate_number" class="form-control" placeholder="Certificate Number" aria-describedby="helpId">
+                              <input type="text" wire:model="email" id="certificate_number" class="form-control" aria-describedby="helpId">
                             </div>
 
                             <div class="form-group">
                                 <label for="certificate_number">Subject Anda</label>
-                                <input type="text" name="certificate_number" id="certificate_number" class="form-control" placeholder="Certificate Number" aria-describedby="helpId">
+                                <input type="text" wire:model="subject" id="certificate_number" class="form-control" aria-describedby="helpId">
                             </div>
 
                             <div class="form-group">
                               <label for="pesan_anda">Pesan Anda</label>
-                              <textarea class="form-control" name="pesan_anda" id="pesan_anda" rows="3"></textarea>
+                              <textarea class="form-control" wire:model="isi_pesan" id="pesan_anda" rows="3"></textarea>
                             </div>
 
                             <div class="form-group">

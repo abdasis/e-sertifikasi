@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark">
     <div class="container-fluid">
         <!-- LOGO -->
-        <a class="logo text-uppercase" href="index.html">
+        <a class="logo text-uppercase" href="{{ route('beranda') }}">
             <img src="{{ asset('frontend/images/1492097807-logo.png') }}" alt="" class="logo-light" height="40" />
             <img src="{{ asset('frontend/images/1492097807-logo.png') }}" alt="" class="logo-dark" height="40" />
         </a>
@@ -17,12 +17,9 @@
                 <li class="nav-item">
                     <a href="{{ route('profile') }}" class="nav-link">Profile</a>
                 </li>
-                <li class="nav-item">
-                    <a href="{{ route('service') }}" class="nav-link">Service</a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Jenis Sertifikasi
+                        Service
                       <span><i class="mdi mdi-menu-down"></i></span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-md-right" aria-labelledby="bd-versions">
@@ -32,7 +29,7 @@
                     </div>
                   </li>
                 <li class="nav-item">
-                    <a href="{{ route('training') }}" class="nav-link">Trainig</a>
+                    <a href="{{ route('training') }}" class="nav-link">Training</a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('validasi') }}" class="nav-link">Validasi Sertifikasi</a>

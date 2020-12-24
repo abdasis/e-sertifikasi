@@ -10,7 +10,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="{{ asset('frontend/images/favicon.ico') }}">
+        <link rel="shortcut icon" href="{{ asset('1492097807-logo.png') }}">
 
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.min.css') }}" type="text/css">
@@ -66,6 +66,7 @@
 
         <!-- javascript -->
         @livewireScripts
+        <x-livewire-alert::scripts />
         <script src="{{ asset('frontend/js/jquery.min.js') }}"></script>
         <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
         <script src="{{ asset('frontend/js/jquery.easing.min.js') }}"></script>

@@ -473,6 +473,7 @@
         <!-- Right bar overlay-->
         <div class="rightbar-overlay"></div>
         @livewireScripts
+        <x-livewire-alert::scripts />
         <!-- Vendor js -->
         <script src="{{ asset('backend/js/vendor.min.js') }}"></script>
         <!-- Plugins js -->
