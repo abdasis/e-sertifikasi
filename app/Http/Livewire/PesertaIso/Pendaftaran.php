@@ -2,7 +2,9 @@
 
 namespace App\Http\Livewire\PesertaIso;
 
+use App\Mail\PendaftaranIso;
 use App\Models\PesertaIso;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 use Livewire\Component;
 use Psy\CodeCleaner\AssignThisVariablePass;
@@ -11,19 +13,19 @@ class Pendaftaran extends Component
 {
 
     public  $standar_sertifikasi,
-            $status_permohonan,
-            $nama_perusahaan,
-            $alamat_perusahaan,
-            $telepon, $email,
-            $jumlah_karyawan,
-            $jumlah_sift,
-            $jumlah_divisi,
-            $ruang_lingkup,
-            $nama_perwakilan,
-            $jabatan,
-            $telepon_perwakilan,
-            $bidang_usaha,
-            $email_perwakilan;
+        $status_permohonan,
+        $nama_perusahaan,
+        $alamat_perusahaan,
+        $telepon, $email,
+        $jumlah_karyawan,
+        $jumlah_sift,
+        $jumlah_divisi,
+        $ruang_lingkup,
+        $nama_perwakilan,
+        $jabatan,
+        $telepon_perwakilan,
+        $bidang_usaha,
+        $email_perwakilan;
 
 
     public function store()
@@ -33,7 +35,7 @@ class Pendaftaran extends Component
         $peserta->status_permohonan = $this->status_permohonan;
         $peserta->nama_perusahaan = $this->nama_perusahaan;
         $peserta->alamat_perusahaan = $this->alamat_perusahaan;
-        $peserta->telepon =$this->telepon;
+        $peserta->telepon = $this->telepon;
         $peserta->email = $this->email;
         $peserta->jumlah_karyawan = $this->jumlah_karyawan;
         $peserta->jumlah_sift = $this->jumlah_sift;
@@ -46,7 +48,8 @@ class Pendaftaran extends Component
         $peserta->email_perwakilan = $this->email_perwakilan;
         $peserta->save();
         if ($peserta) {
-            $this->emit('success',['title' => 'Berhasil', 'message' => 'Selamat Pendaftaran Anda Berhasil Tunggu Konfirmasi Selanjutnya']);
+            Mail::to('info@rmicertification.co.id')->send(new PendaftaranIso($peserta));
+            $this->emit('success', ['title' => 'Berhasil', 'message' => 'Selamat Pendaftaran Anda Berhasil Tunggu Konfirmasi Selanjutnya']);
             Session::flash('Selamat Pendaftaran Anda Berhasil Tunggu Konfirmasi Selanjutnya');
         }
     }
@@ -58,7 +61,7 @@ class Pendaftaran extends Component
         $this->nama_perwakilan = null;
         $this->nama_perusahaan = null;
         $this->alamat_perusahaan = null;
-        $this->telepon_perwakilan =null;
+        $this->telepon_perwakilan = null;
         $this->telepon  = null;
         $this->jumlah_karyawan = null;
         $this->jumlah_divisi = null;

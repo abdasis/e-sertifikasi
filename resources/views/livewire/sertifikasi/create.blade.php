@@ -24,28 +24,29 @@
                     <form wire:submit.prevent='store'>
                         <div class="form-group">
                             <label for="">Nama Perusahaan</label>
-                            <input type="text" class="form-control shadow-none" wire:model='perusahaan' placeholder="Masukan Nama Perusahaan">
+                            <input type="text" class="form-control shadow-none" wire:model='perusahaan'
+                                placeholder="Masukan Nama Perusahaan">
                         </div>
 
                         <div class="form-group">
                             <label for="">ID Sertifikasi</label>
-                            <input type="text" class="form-control shadow-none" wire:model='id_sertifikasi' placeholder="Masukan Nama Perusahaan">
+                            <input type="text" class="form-control shadow-none" wire:model='id_sertifikasi'
+                                placeholder="Masukan Nama Perusahaan">
                         </div>
 
                         <div class="form-group">
                             <label for="">Alamat</label>
-                            <input type="text" class="form-control shadow-none" wire:model='alamat' placeholder="Masukan Nama Perusahaan">
+                            <input type="text" class="form-control shadow-none" wire:model='alamat'
+                                placeholder="Masukan Nama Perusahaan">
                         </div>
 
                         <div class="form-group">
                             <label for="standard">Standard</label>
                             <select class="custom-select shadow-none" wire:model="standard" id="standard">
                                 <option selected>Pilih Standard</option>
-                                <option value="ISO 9001">ISO 9001</option>
-                                <option value="ISO 14001">ISO 14001</option>
-                                <option value="OHSAS 18001">OHSAS 18001</option>
-                                <option value="ISO 27001:2013">ISO 27001:2013</option>
-                                <option value="ISO 22000:2005">ISO 22000:2005</option>
+                                @foreach (App\Models\Menu::all() as $iso)
+                                <option value="{{ $iso->nama }}">{{ $iso->nama }}</option>
+                                @endforeach
                             </select>
                         </div>
 
@@ -65,8 +66,9 @@
                         </div>
 
                         <div class="form-group">
-                          <label for="expired">Date Expired</label>
-                          <input type="date" name="expired" wire:model='date_expired' id="expired" class="form-control shadow-none" placeholder="Masukan Tanggal Expire">
+                            <label for="expired">Date Expired</label>
+                            <input type="date" name="expired" wire:model='date_expired' id="expired"
+                                class="form-control shadow-none" placeholder="Masukan Tanggal Expire">
                         </div>
 
                         <div class="form-group">
@@ -81,13 +83,13 @@
 
 
 @push('js')
-    <script>
-        Livewire.on('success', params => {
+<script>
+    Livewire.on('success', params => {
             Swal.fire(
                 params['title'],
                 params['message'],
                 'success'
             )
         })
-    </script>
+</script>
 @endpush

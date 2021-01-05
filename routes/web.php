@@ -40,7 +40,7 @@ Route::get('contact-us', Kontak::class)->name('contact-us');
 Route::get('pendaftaran-iso', Pendaftaran::class)->name('peserta-iso.pendaftaran');
 
 
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::group(['prefix' => 'sertifikasi'], function () {
         Route::get('/', Index::class)->name('sertifikasi.index');
         Route::get('/tambah', Create::class)->name('sertifikasi.create');
