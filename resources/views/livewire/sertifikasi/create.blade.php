@@ -44,11 +44,9 @@
                             <label for="standard">Standard</label>
                             <select class="custom-select shadow-none" wire:model="standard" id="standard">
                                 <option selected>Pilih Standard</option>
-                                <option value="ISO 9001">ISO 9001</option>
-                                <option value="ISO 14001">ISO 14001</option>
-                                <option value="OHSAS 18001">OHSAS 18001</option>
-                                <option value="ISO 27001:2013">ISO 27001:2013</option>
-                                <option value="ISO 22000:2005">ISO 22000:2005</option>
+                                @foreach (App\Models\Menu::all() as $iso)
+                                <option value="{{ $iso->nama }}">{{ $iso->nama }}</option>
+                                @endforeach
                             </select>
                         </div>
 

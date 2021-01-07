@@ -19,10 +19,9 @@ class Kontak extends Component
             'isi_pesan' => $this->isi_pesan
         ];
 
-        Mail::to('marketing@rmicertification.co.id')->send(new ContactMail($details));
+        Mail::to('info@rmicertification.co.id')->send(new ContactMail($details));
 
         $this->alert('success', 'Submission successful!');
-
     }
 
     public function render()
