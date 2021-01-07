@@ -24,17 +24,20 @@
                     <form wire:submit.prevent='store'>
                         <div class="form-group">
                             <label for="">Nama Perusahaan</label>
-                            <input type="text" class="form-control shadow-none" wire:model='perusahaan' placeholder="Masukan Nama Perusahaan">
+                            <input type="text" class="form-control shadow-none" wire:model='perusahaan'
+                                placeholder="Masukan Nama Perusahaan">
                         </div>
 
                         <div class="form-group">
                             <label for="">ID Sertifikasi</label>
-                            <input type="text" class="form-control shadow-none" wire:model='id_sertifikasi' placeholder="Masukan Nama Perusahaan">
+                            <input type="text" class="form-control shadow-none" wire:model='id_sertifikasi'
+                                placeholder="Masukan Nama Perusahaan">
                         </div>
 
                         <div class="form-group">
                             <label for="">Alamat</label>
-                            <input type="text" class="form-control shadow-none" wire:model='alamat' placeholder="Masukan Nama Perusahaan">
+                            <input type="text" class="form-control shadow-none" wire:model='alamat'
+                                placeholder="Masukan Nama Perusahaan">
                         </div>
 
                         <div class="form-group">
@@ -56,17 +59,18 @@
 
                         <div class="form-group">
                             <label for="">Surveilance 1</label>
-                            <input type="text" class="form-control shadow-none" wire:model='surveilance_1'>
+                            <input type="date" class="form-control shadow-none" wire:model='surveilance_1'>
                         </div>
 
                         <div class="form-group">
                             <label for="">Surveilance 2</label>
-                            <input type="text" class="form-control shadow-none" wire:model='surveilance_2'>
+                            <input type="date" class="form-control shadow-none" wire:model='surveilance_2'>
                         </div>
 
                         <div class="form-group">
-                          <label for="expired">Date Expired</label>
-                          <input type="date" name="expired" wire:model='date_expired' id="expired" class="form-control shadow-none" placeholder="Masukan Tanggal Expire">
+                            <label for="expired">Date Expired</label>
+                            <input type="date" name="expired" wire:model='date_expired' id="expired"
+                                class="form-control shadow-none" placeholder="Masukan Tanggal Expire">
                         </div>
 
                         <div class="form-group">
@@ -81,13 +85,13 @@
 
 
 @push('js')
-    <script>
-        Livewire.on('success', params => {
+<script>
+    Livewire.on('success', params => {
             Swal.fire(
                 params['title'],
                 params['message'],
                 'success'
             )
         })
-    </script>
+</script>
 @endpush

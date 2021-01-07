@@ -18,12 +18,12 @@ class ValidasiSertifikasi extends Component
     }
     public function validasiSertifikasi()
     {
-        $this->getSertifikat = Sertifikasi::where('perusahaan', $this->nama_perusahaan)->orWhere('id_sertifikasi', $this->certificate_number)->first();
+        $this->getSertifikat = Sertifikasi::where('perusahaan', $this->nama_perusahaan)->orWhere('id_sertifikasi', $this->certificate_number)->get();
     }
     public function render()
     {
         return view('livewire.validasi-sertifikasi', [
-            'sertifikat' => $this->getSertifikat,
+            'dataSertifikat' => $this->getSertifikat,
         ])->layout('layouts.guest');
     }
 }
