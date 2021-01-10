@@ -52,7 +52,7 @@
 
                         <div class="form-group">
                             <label for="">Submit</label>
-                            <input type="text" class="form-control shadow-none" wire:model='submit'>
+                            <input type="date" class="form-control shadow-none" wire:model='submit'>
                         </div>
 
                         <div class="form-group">
