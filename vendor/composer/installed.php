@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'a3e7954b85f15e1f8dea4d4e275b805a62777567',
+    'reference' => '33400ae7bd4bb733f84a718f2c3aeadffb34082e',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -469,12 +469,12 @@
     ),
     'jantinnerezo/livewire-alert' => 
     array (
-      'pretty_version' => '2.0.2',
-      'version' => '2.0.2.0',
+      'pretty_version' => '2.1.4',
+      'version' => '2.1.4.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'd9c9afd0d235c3a6f3c7986dad98cbc7ec62804b',
+      'reference' => '817215353d9af7ed97fec7e764f529d9b03b031d',
     ),
     'jaybizzle/crawler-detect' => 
     array (
@@ -544,7 +544,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'a3e7954b85f15e1f8dea4d4e275b805a62777567',
+      'reference' => '33400ae7bd4bb733f84a718f2c3aeadffb34082e',
     ),
     'laravel/sanctum' => 
     array (

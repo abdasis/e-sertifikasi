@@ -45,6 +45,7 @@ return array(
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Mail\\ContactMail' => $baseDir . '/app/Mail/ContactMail.php',
+    'App\\Mail\\PendaftaranIso' => $baseDir . '/app/Mail/PendaftaranIso.php',
     'App\\Models\\Iso' => $baseDir . '/app/Models/Iso.php',
     'App\\Models\\Menu' => $baseDir . '/app/Models/Menu.php',
     'App\\Models\\PesertaIso' => $baseDir . '/app/Models/PesertaIso.php',

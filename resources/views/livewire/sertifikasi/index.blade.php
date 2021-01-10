@@ -1,6 +1,6 @@
 <div>
-      <!-- start page title -->
-      <div class="row">
+    <!-- start page title -->
+    <div class="row">
         <div class="col-12">
             <div class="page-title-box">
                 <div class="page-title-right">
@@ -51,9 +51,14 @@
                                 <td>{{ $sertification->expired }}</td>
                                 <td>
                                     <div class="btn-group-justified">
-                                        <button class="btn btn-sm btn-outline-warning"><i class="fa fa-edit"></i></button>
-                                        <button class="btn btn-sm btn-outline-info"><i class="fa fa-eye"></i></button>
-                                        <button class="btn btn-sm btn-danger shadow-none"><i class="fa fa-trash"></i></button>
+                                        <a href="{{ route('sertifikasi.update', $sertification->id) }}">
+                                            <button class="btn btn-sm btn-outline-warning"><i
+                                                    class="fa fa-edit"></i></button>
+                                        </a>
+                                        {{-- <button class="btn btn-sm btn-outline-info"><i class="fa fa-eye"></i></button> --}}
+                                        <button wire:click='delete({{ $sertification->id }})'
+                                            class="btn btn-sm btn-danger shadow-none"><i
+                                                class="fa fa-trash"></i></button>
                                     </div>
                                 </td>
                             </tr>
