@@ -23,51 +23,44 @@
                     Tampilan Seluruh Sertifikasi
                 </h5>
 
-                <div class="card-body">
-                    <table class="table table-sm table-responsive">
-                        <thead>
-                            <tr>
-                                <th>No.</th>
-                                <th>Nama Perusahaan</th>
-                                <th>ID Sertifikasi</th>
-                                <th>Standarisasi</th>
-                                <th>Standarisasi</th>
-                                <th>Surveilance 1</th>
-                                <th>Surveilance 2</th>
-                                <th>Expired Date</th>
-                                <th>Option</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($sertifications as $key => $sertification)
-                            <tr>
-                                <td scope="row">{{ $key+1 }}</td>
-                                <td>{{ $sertification->perusahaan }}</td>
-                                <td>{{ $sertification->id_sertifikasi }}</td>
-                                <td>{{ $sertification->alamat }}</td>
-                                <td>{{ $sertification->standard }}</td>
-                                <td>{{ $sertification->surveilance_1 }}</td>
-                                <td>{{ $sertification->surveilance_2 }}</td>
-                                <td>{{ $sertification->expired }}</td>
-                                <td>
-                                    <div class="btn-group-justified">
-                                        <a href="{{ route('sertifikasi.update', $sertification->id) }}">
-                                            <button class="btn btn-sm btn-outline-warning"><i
-                                                    class="fa fa-edit"></i></button>
-                                        </a>
-                                        {{-- <button class="btn btn-sm btn-outline-info"><i class="fa fa-eye"></i></button> --}}
-                                        <button wire:click='delete({{ $sertification->id }})'
-                                            class="btn btn-sm btn-danger shadow-none"><i
-                                                class="fa fa-trash"></i></button>
-                                    </div>
-                                </td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                    <div>
-                        {{ $sertifications->links() }}
-                    </div>
+                <table class="table card-body table-nowrap table-sm">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>No.</th>
+                            <th>Nama Perusahaan</th>
+                            <th>ID Sertifikasi</th>
+                            <th>Standarisasi</th>
+                            <th>Standarisasi</th>
+                            <th>Expired Date</th>
+                            <th>Option</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($sertifications as $key => $sertification)
+                        <tr>
+                            <td scope="row">{{ $key+1 }}</td>
+                            <td>{{ $sertification->perusahaan }}</td>
+                            <td>{{ $sertification->id_sertifikasi }}</td>
+                            <td class="text-wrap">{{ $sertification->alamat }}</td>
+                            <td>{{ $sertification->standard }}</td>
+                            <td>{{ $sertification->expired }}</td>
+                            <td>
+                                <div class="btn-group-justified">
+                                    <a href="{{ route('sertifikasi.update', $sertification->id) }}">
+                                        <button class="btn btn-sm btn-outline-warning"><i
+                                                class="fa fa-edit"></i></button>
+                                    </a>
+                                    {{-- <button class="btn btn-sm btn-outline-info"><i class="fa fa-eye"></i></button> --}}
+                                    <button wire:click='delete({{ $sertification->id }})'
+                                        class="btn btn-sm btn-danger shadow-none"><i class="fa fa-trash"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+                <div>
+                    {{ $sertifications->links() }}
                 </div>
 
             </div>

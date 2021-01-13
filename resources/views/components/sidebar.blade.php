@@ -71,6 +71,13 @@
                     </li>
 
                     <li>
+                        <a href="{{ route('peserta.index') }}">
+                            <i class="fa fa-users"></i>
+                            <span> Anggota </span>
+                        </a>
+                    </li>
+
+                    <li>
                         <a href="#sertifikat" data-toggle="collapse">
                             <i class="mdi mdi-file-document"></i>
                             <span> Sertifikasi </span>

@@ -11,6 +11,7 @@ use App\Http\Livewire\ValidasiSertifikasi;
 use App\Http\Livewire\JenisSertifikasi;
 use App\Http\Livewire\Menu\Index as MenuIndex;
 use App\Http\Livewire\Menu\Update as MenuUpdate;
+use App\Http\Livewire\PesertaIso\Index as PesertaIsoIndex;
 use App\Http\Livewire\PesertaIso\Pendaftaran;
 use App\Http\Livewire\Sertifikasi\Create;
 use App\Http\Livewire\Sertifikasi\Index;
@@ -46,6 +47,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         Route::get('/tambah', Create::class)->name('sertifikasi.create');
         Route::get('/update/{id}', Update::class)->name('sertifikasi.update');
         Route::get('/show/{id}', Show::class)->name('sertifikasi.show');
+    });
+    Route::group(['prefix' => 'peserta'], function () {
+        Route::get('semua-peserta', PesertaIsoIndex::class)->name('peserta.index');
     });
     Route::group(['prefix' => 'iso'], function () {
         Route::get('/', IsoIndex::class)->name('iso.index');
