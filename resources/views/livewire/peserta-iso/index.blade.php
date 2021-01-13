@@ -46,10 +46,9 @@
                             <td>{{ $peserta->email }}</td>
                             <td>
                                 <div class="btn-group-justified">
-                                    <a href="{{ route('sertifikasi.update', $peserta->id) }}">
-                                        <button class="btn btn-sm btn-outline-warning"><i
-                                                class="fa fa-edit"></i></button>
-                                    </a>
+                                    {{-- <a href="{{ route('sertifikasi.update', $peserta->id) }}">
+                                    <button class="btn btn-sm btn-outline-warning"><i class="fa fa-edit"></i></button>
+                                    </a> --}}
                                     <button wire:click='show({{ $peserta->id }})' class="btn btn-sm btn-outline-info"><i
                                             class="fa fa-eye"></i></button>
                                     <button wire:click='delete({{ $peserta->id }})'
