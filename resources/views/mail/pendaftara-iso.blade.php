@@ -13,75 +13,75 @@
             <tr>
                 <td scope="row">Standar Sertifikasi</td>
                 <td>:</td>
-                <td>{{ $->details->standar_sertifikasi }}</td>
+                <td>{{ $details->standar_sertifikasi }}</td>
             </tr>
             <tr>
                 <td scope="row">Status Permohonan</td>
                 <td>:</td>
-                <td>{{ $->details->status_permohonan }}</td>
+                <td>{{ $details->status_permohonan }}</td>
             </tr>
             <tr>
                 <td scope="row">Nama Perusahaan</td>
                 <td>:</td>
-                <td>{{ $->details->nama_perusahaan }}</td>
+                <td>{{ $details->nama_perusahaan }}</td>
             </tr>
             <tr>
                 <td scope="row">Alamat Perusahaan</td>
                 <td>:</td>
-                <td>{{ $->details->alamat_perusahaan }}</td>
+                <td>{{ $details->alamat_perusahaan }}</td>
             </tr>
             <tr>
                 <td scope="row">Telepon</td>
                 <td>:</td>
-                <td>{{ $->details->telepon }}</td>
+                <td>{{ $details->telepon }}</td>
             </tr>
             <tr>
                 <td scope="row">Email</td>
                 <td>:</td>
-                <td>{{ $->details->email }}</td>
+                <td>{{ $details->email }}</td>
             </tr>
             <tr>
                 <td scope="row">Jumlah Karyawan</td>
                 <td>:</td>
-                <td>{{ $->details->jumlah_karyawan }}</td>
+                <td>{{ $details->jumlah_karyawan }}</td>
             </tr>
             <tr>
                 <td scope="row">Jumlah Divisi</td>
                 <td>:</td>
-                <td>{{ $->details->jumlah_divisi }}</td>
+                <td>{{ $details->jumlah_divisi }}</td>
             </tr>
             <tr>
                 <td scope="row">Jumlah Sift</td>
                 <td>:</td>
-                <td>{{ $->details->jumlah_sift }}</td>
+                <td>{{ $details->jumlah_sift }}</td>
             </tr>
             <tr>
                 <td scope="row">Ruang Lingkup</td>
                 <td>:</td>
-                <td>{{ $->details->ruang_lingkup }}</td>
+                <td>{{ $details->ruang_lingkup }}</td>
             </tr>
             <tr>
                 <td scope="row">Nama Perwakilan</td>
                 <td>:</td>
-                <td>{{ $->details->nama_perwakilan }}</td>
+                <td>{{ $details->nama_perwakilan }}</td>
             </tr>
 
             <tr>
                 <td scope="row">Jabatan</td>
                 <td>:</td>
-                <td>{{ $->details->jabatan }}</td>
+                <td>{{ $details->jabatan }}</td>
             </tr>
 
             <tr>
                 <td scope="row">Telepon Perwakilan</td>
                 <td>:</td>
-                <td>{{ $->details->telepon_perwakilan }}</td>
+                <td>{{ $details->telepon_perwakilan }}</td>
             </tr>
 
             <tr>
                 <td scope="row">Email Perwakilan</td>
                 <td>:</td>
-                <td>{{ $->details->bidang_usaha }}</td>
+                <td>{{ $details->bidang_usaha }}</td>
             </tr>
 
         </tbody>
