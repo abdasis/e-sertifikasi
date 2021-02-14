@@ -36,7 +36,7 @@ Route::get('profile', Profile::class)->name('profile');
 Route::get('training', Training::class)->name('training');
 Route::get('validasi', ValidasiSertifikasi::class)->name('validasi');
 Route::get('service', Service::class)->name('service');
-Route::get('jenis-sertifikasi/{slug}', JenisSertifikasi::class)->name('jenis-sertifikasi');
+Route::get('/{slug}', JenisSertifikasi::class)->name('jenis-sertifikasi');
 Route::get('contact-us', Kontak::class)->name('contact-us');
 Route::get('pendaftaran-iso', Pendaftaran::class)->name('peserta-iso.pendaftaran');
 
